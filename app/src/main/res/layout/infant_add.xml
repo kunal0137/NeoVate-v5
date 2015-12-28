@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:longClickable="false">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/infantName"
+        android:hint="Infant Name"
+        android:layout_gravity="center_horizontal"
+        android:maxHeight="1dp"
+        android:maxLines="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/dateBirth"
+        android:layout_gravity="center_horizontal"
+        android:hint="Date of Birth: Day/Month/Year" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sensorNum"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        android:hint="Sensor Number"
+        android:focusableInTouchMode="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/infantSave"
+        android:layout_gravity="center_horizontal"
+        android:onClick="newInfant" />
+
+</LinearLayout>
